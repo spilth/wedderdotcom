@@ -35,6 +35,7 @@ PLATFORMS
 DEPENDENCIES
   ffaker
   image_suckr
+  rack
   rerun
   sinatra
   slim
