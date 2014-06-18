@@ -29,6 +29,10 @@ module Faker
     def number
       NUMBER.rand
     end
+
+    def headline
+      HEADLINE.rand
+    end
   end
 end
 
@@ -39,15 +43,13 @@ get '/' do
   pronoun = Faker::Headline.pronoun
   number = Faker::Headline.number
   noun = Faker::Headline.noun
+  noun2 = Faker::Headline.noun
   verb = Faker::Headline.verb
 
-  sentences = [
-    "#{pronoun.capitalize} #{past_tense_verb} WHAT in WHERE?",
-    "#{number} #{noun}s that will #{verb.upcase} your mind",
-    "#{pronoun.capitalize} can #{verb} with THIS #{noun}?"
-  ]
-  headline = sentences.sample
-  image_url = suckr.get_image_url({"q" => noun, "imgtype" => "photo", "imgsz" => "medium"})
+  headline = eval %Q["#{Faker::Headline.headline}"]
+
+  image_url = suckr.get_image_url({"q" => "#{noun} #{noun2}", "imgtype" => "photo", "imgsz" => "medium"})
+
   slim :index, locals: {
     suckr: suckr,
     image_url: image_url,

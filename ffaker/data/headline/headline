@@ -1,0 +1,7 @@
+#{pronoun.capitalize} #{past_tense_verb} WHAT in WHERE?
+#{number} #{noun}s that will #{verb.upcase} your mind
+#{pronoun.capitalize} can #{verb} with THIS #{noun}?
+THIS #{noun} can #{verb} WHAT?
+The #{number} best ways to #{verb} your #{noun2}
+The #{number} worst ways to #{verb} your #{noun2}
+#{number} of the worst #{noun}s
