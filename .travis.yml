@@ -1,0 +1,5 @@
+deploy:
+  provider: heroku
+  api_key:
+    secure: h9WCBo8ls6DjcUyRv9ypmqQJQPsHEMvrLUzljkGRzPoc7Zhstf1TPRQH5vpYAGh5bynllqTJLRDtk9d9Zg5Qf/cj+mPJI3xhf74KFxe06EeRgXZATHVoinECj854AfnKM1sUVOzW4H4pKOyo1GLNkTtv35rmTG2ykK19sZ351co=
+  app: wedderdotcom
