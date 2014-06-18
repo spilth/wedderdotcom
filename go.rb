@@ -32,10 +32,9 @@ module Faker
   end
 end
 
-get '/' do
+suckr = ImageSuckr::GoogleSuckr.new
 
-  terms = ["magic", "moon", "bugs", "flowers", "tornado", "child", "death"]
-  term = terms.sample
+get '/' do
   past_tense_verb = Faker::Headline.past_tense_verb
   pronoun = Faker::Headline.pronoun
   number = Faker::Headline.number
@@ -48,10 +47,10 @@ get '/' do
     "#{pronoun.capitalize} can #{verb} with THIS #{noun}?"
   ]
   headline = sentences.sample
-  suckr = ImageSuckr::GoogleSuckr.new
+  image_url = suckr.get_image_url({"q" => noun, "imgtype" => "photo", "imgsz" => "medium"})
   slim :index, locals: {
     suckr: suckr,
-    term: term,
+    image_url: image_url,
     headline: headline
   }
 end
