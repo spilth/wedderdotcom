@@ -6,4 +6,5 @@ gem 'sinatra'
 gem 'image_suckr'
 gem 'slim'
 gem 'ffaker'
+gem 'rake'
 
