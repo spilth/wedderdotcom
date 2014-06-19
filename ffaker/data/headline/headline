@@ -6,4 +6,4 @@ The #{number} best ways to #{verb} your #{noun2}
 The #{number} worst ways to #{verb} your #{noun2}
 #{number} of the worst #{noun}s
 This one trick could #{verb} your #{noun}
-#{pronoun} found this WHERE?
+#{pronoun.capitalize} found this WHERE?
