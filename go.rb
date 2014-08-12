@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'newrelic_rpm'
 require 'slim'
 require 'image_suckr'
 require 'ffaker'

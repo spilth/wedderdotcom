@@ -7,4 +7,5 @@ gem 'image_suckr'
 gem 'slim'
 gem 'ffaker'
 gem 'rake'
+gem 'newrelic_rpm'
 

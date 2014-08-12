@@ -3,6 +3,7 @@ GEM
   specs:
     ffaker (1.24.0)
     image_suckr (0.1.0)
+    newrelic_rpm (3.9.1.236)
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
@@ -23,6 +24,7 @@ PLATFORMS
 DEPENDENCIES
   ffaker
   image_suckr
+  newrelic_rpm
   rack
   rake
   sinatra
